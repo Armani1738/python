@@ -1,12 +1,12 @@
 def shape(number):
-    for row in number:
+    for row in range(number):
         print()
         for column in range(row - 1):
             print('*', end=' ')
-    for rows in number:
+    for rows in range(number):
 
         print()
         for column in range(3 - rows):
             print('* ', end='')
 
-shape(range(6))
+shape(6)
