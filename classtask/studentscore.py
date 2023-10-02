@@ -1,12 +1,10 @@
-from random import random
+def average_score(scores):
+    return sum(scores) / len(scores)
 
-count = 1
-average = 0
-total = 0
-while count < 10:
-    number = int(input("Enter your student number: "))
-    total = total + number
-    count += 1
-average = total / count
-print(average)
+exam_scores = []
+for i in range(10):
+    score = int(input("Enter the score: "))
+    exam_scores.append(score)
 
+    print(average_score(exam_scores))
+average_score()

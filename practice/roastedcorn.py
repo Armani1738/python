@@ -10,9 +10,9 @@ picture = [
 ]
 for row in picture:
     for count in row:
-        if count ==0:
-            print(' ',end=' ')
+        if count ==1:
+            print('*',end=' ')
         else:
-            print('*', end=' ')
+            print(' ', end=' ')
     print()
 
