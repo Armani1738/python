@@ -1,55 +1,54 @@
-def largest_element(array):
-    largest = array[0]
-    for number in array:
+def largest_element(number):
+    largest = number[0]
+    for number in number:
         if number > largest:
             largest = number
     return largest
 
 
-def reverse_list(my_array):
-    left_slide = 0
-    right_side = len(my_array) - 1
-    while left_slide < right_side:
-        number = my_array[left_slide]
-        my_array[left_slide] = my_array[right_side]
-        my_array[right_side] = number
-        left_slide += 1
-        right_side -= 1
+def reverse_list(number):
+    firstline = 0
+    secondline = len(number) - 1
+    while firstline < secondline:
+        number = number[firstline]
+        number[firstline] = number[secondline]
+        number[secondline] = number
+        firstline += 1
+        secondline -= 1
 
-    return my_array
-
-def check_element(my_array, to_check):
-    for number in my_array:
-        if number == to_check:
+    return number
+def element(number, integer):
+    for number in number:
+        if number == integer:
             return True
     return False
 
 
-def odd_number(my_array):
-    odd_position = []
-    for number in range(1, len(my_array), 2):
-        odd_position.append(my_array[number])
-    return odd_position
+def odd_number(number):
+    odd = []
+    for number in range(1, len(number), 2):
+        odd.append(number[number])
+    return odd
 
-def even_numbers(my_array):
-    even_number = []
-    for number in range(0, len(my_array), 2):
-        even_number.append(my_array[number])
-    return even_number
+def even_numbers(number):
+    even = []
+    for number in range(0, len(number), 2):
+        even.append(number[number])
+    return even
 
-def sum_loop(my_array):
+def sum1(number):
     sum = 0
-    for number in range(0, len(my_array)):
-        sum = sum + my_array[number]
+    for number in range(0, len(number)):
+        sum = sum + number[number]
     return sum
 
-def sum_loop(my_array):
+def sum_loop1(number):
     sum =0
     count = 0
-    while count < len(my_array):
-        sum = sum + my_array[count]
+    while count < len(number):
+        sum = sum + number[count]
         count += 1
     return sum
 
 # my_array = "omo"
-# print(palindrome(my_array))
+# print(palindrome(number))
