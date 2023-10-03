@@ -17,6 +17,8 @@ def reverse_list(number):
         secondline -= 1
 
     return number
+
+
 def element(number, integer):
     for number in number:
         if number == integer:
@@ -26,15 +28,17 @@ def element(number, integer):
 
 def odd_number(number):
     odd = []
-    for number in range(1, len(number), 2):
-        odd.append(number[number])
+    for number in number[::2]:
+        odd.append(number)
     return odd
+
 
 def even_numbers(number):
     even = []
-    for number in range(0, len(number), 2):
-        even.append(number[number])
+    for number in number[1::2]:
+        even.append(number)
     return even
+
 
 def sum1(number):
     sum = 0
@@ -42,8 +46,9 @@ def sum1(number):
         sum = sum + number[number]
     return sum
 
+
 def sum_loop1(number):
-    sum =0
+    sum = 0
     count = 0
     while count < len(number):
         sum = sum + number[count]

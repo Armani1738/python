@@ -1,6 +1,6 @@
 import unittest
 
-from javapythonassignment.functionsclass import largest_element, reverse_list, check_element
+from javapythonassignment.functionsclass import largest_element, reverse_list, element, odd_number, even_numbers
 
 
 class MyTestCase(unittest.TestCase):
@@ -19,5 +19,17 @@ class MyTestCase(unittest.TestCase):
     def test_element(self):
         number = [3, 4, 5, 6, 7, 9]
         answer = [6]
-        result = check_element(number)
+        result = element(number)
+        self.assertEqual(result, answer)
+
+    def test_odd_number(self):
+        number = [1,2,3,4,5,6,7,8,9,10]
+        answer = [1,3,5,7,9]
+        result = odd_number(number)
+        self.assertEqual(result, answer)
+
+    def test_even_numbers(self):
+        number = [1,2,3,4,5,6,7,8,9,10]
+        answer = [2,4,6,8,10]
+        result = even_numbers(number)
         self.assertEqual(result, answer)
