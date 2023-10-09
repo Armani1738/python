@@ -1,3 +1,6 @@
+from javapythonassignment.calculator import Calculators
+
+
 def phone_menu():
     print("===== Nokia main menu =====")
     print("""Press
@@ -34,7 +37,7 @@ def phone_menu():
     elif nokia == 8:
         print(games())
     elif nokia == 9:
-        print(Calculator())
+        Calculators()
     elif nokia == 10:
         print(Reminders())
     elif nokia == 11:
@@ -43,7 +46,8 @@ def phone_menu():
         print(Profile())
     elif nokia == 13:
         print(Sim_service())
-    elif nokia == 14:
+
+    def phone_menu():
         print(phone_menu())
 
 
@@ -91,6 +95,8 @@ def phone_book():
             print("Memory status")
         elif options == 4:
             print(phone_menu())
+
+
 def message():
     print("===== Message =====")
     print("""For Message
@@ -161,6 +167,7 @@ def message():
             elif common == 4:
                 print(phone_menu())
 
+
 def chat():
     print("===== Chat =====")
     print("""
@@ -176,6 +183,7 @@ def chat():
     elif chat == 2:
         print("Chat settings")
         phone_menu()
+
 
 def call_register():
     print("===== Call register =====")
@@ -349,7 +357,7 @@ def settings():
         elif language == 6:
             print("Confirm SIM service actions")
         elif language == 7:
-            print(phone_menu())
+            phone_menu()
     elif settings == 6:
         print("===== Security settings =====")
         print("""For security settings
@@ -375,11 +383,11 @@ def settings():
         elif securitySettings == 6:
             print("Change access codes")
         elif settings == 7:
-            print(phone_menu())
+            phone_menu()
     elif settings == 7:
         print("Restore factory settings")
     elif settings == 8:
-        print(phone_menu())
+        phone_menu()
 
 
 def call_divert():
@@ -387,7 +395,7 @@ def call_divert():
     if call_divert == 1:
         print("PIN code request")
     elif settings == 2:
-        print(phone_menu())
+        phone_menu()
     print("Kindly select option: ")
 
 
@@ -396,17 +404,22 @@ def games():
     if games == 1:
         print("Games")
     elif games == 2:
-        print(phone_menu())
+        phone_menu()
     print("Kindly select option: ")
 
 
 def Calculator():
     print("======= Calculator =======")
-    if Calculator == 1:
-        print("Calculator")
-    elif Calculator == 2:
-        print(phone_menu())
-    print("Kindly select option: ")
+    print("""
+    1-> calculate
+    2-> phone menu
+                                    """)
+    calculator = input("Kindly select option: ")
+    if calculator == 1:
+        Calculators()
+
+    elif Reminders == 2:
+        phone_menu()
 
 
 def Reminders():
@@ -414,7 +427,7 @@ def Reminders():
     if Reminders == 1:
         print("set-up")
     elif Reminders == 2:
-        print(phone_menu())
+        phone_menu()
     print("Kindly select option: ")
 
 
@@ -443,7 +456,7 @@ def Clock():
     elif clock == 6:
         print("Auto update of date and time")
     elif clock == 7:
-        print(phone_menu())
+        phone_menu()
 
 
 def Profile():
@@ -451,7 +464,7 @@ def Profile():
     if Profile == 1:
         print("profile")
     elif Profile == 2:
-        print(phone_menu())
+        phone_menu()
     print("Kindly select option: ")
 
 
@@ -460,7 +473,8 @@ def Sim_service():
     if Sim_service == 1:
         print("sim service")
     elif Reminders == 2:
-        print(phone_menu())
+        phone_menu()
     print("Kindly select option: ")
 
-print(phone_menu())
+
+phone_menu()

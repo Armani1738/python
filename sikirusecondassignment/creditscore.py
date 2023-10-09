@@ -29,4 +29,5 @@ else:
     print(f"Discount (%): Not applied")
     print(f"Deposit {deposit}")
     print("***************************************")
-    print("         Thanks For Patronage          ")
+    print("     Please fund your Credit card       ")
+    print("      Thanks For Patronage          ")

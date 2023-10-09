@@ -2,7 +2,6 @@ import unittest
 
 from javapythonassignment.functionsclass import largest_element, reverse_list, element, odd_number, even_numbers
 
-
 class MyTestCase(unittest.TestCase):
     def test_largest(self):
         number = [45, 76, 23, 87, 23, 56]
