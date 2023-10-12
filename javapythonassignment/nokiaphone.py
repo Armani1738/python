@@ -68,7 +68,11 @@ def phone_book():
     print("Kindly select option: ")
     view = str(input())
     if view == 1:
-        print("Search")
+        print("===== Search =====")
+        print("""Search
+            1-> 
+            
+                                """)
     elif view == 2:
         print("Service Nos")
     elif view == 3:
@@ -392,20 +396,30 @@ def settings():
 
 def call_divert():
     print("======= Call divert =======")
+    print("""      Call divert
+            1-> Pin code request
+            2-> phone menu 
+                                    """)
+    print("Kindly select option: ")
+    call_divert= int(input())
     if call_divert == 1:
         print("PIN code request")
     elif settings == 2:
         phone_menu()
-    print("Kindly select option: ")
-
 
 def games():
     print("======= Games =======")
+    print(""" Games 
+            1-> start games
+            2-> phone menu
+                            """)
+    print("Kindly select option: ")
+    games = int(input())
     if games == 1:
         print("Games")
     elif games == 2:
         phone_menu()
-    print("Kindly select option: ")
+
 
 
 def Calculator():
